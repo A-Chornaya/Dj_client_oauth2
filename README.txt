@@ -1,4 +1,3 @@
-# Dj_client_oauth2
 Django Client
 ==============
 for "Django OAuth2 Server" : https://github.com/RichardKnop/django-oauth2-server#installation
