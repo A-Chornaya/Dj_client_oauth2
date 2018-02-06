@@ -1,7 +1,8 @@
 # Dj_client_oauth2
 Django Client
 ==============
-for "Django OAuth2 Server" : https://github.com/RichardKnop/django-oauth2-server#installation
+Server example: "Dj_server_oauth2" :
+https://github.com/A-Chornaya/Dj_server_oauth2.git
 
 
 
@@ -32,9 +33,13 @@ $ python manage.py migrate
 Configuration
 =============
 
-CLIENT_ID and CLIENT_SECRET set in the dj_client/settings.py
+Set configuration in the dj_client/settings.py:
+- CLIENT_ID
+- CLIENT_SECRET
+- AUTHORIZATION_URL
+- TOKEN_URL
 
-Default they set for "Django OAuth2 Server"
+Default they set for "Dj_server_oauth2"
 
 
 
@@ -45,4 +50,13 @@ Start the project
 $ python manage.py runserver 8070
 ```
 
-The "Django OAuth2 Server" start at the port 8080
+The "Dj_server_oauth2" start at the port 8080
+
+
+
+Open in browser
+=============
+Go to http://127.0.0.1:8070/client/
+You should see the index page, where you can log in with another server
+You will redirect to the server, where you need log in (sign up) and agree with credentials
+Then you will return to the client and see json with data from server

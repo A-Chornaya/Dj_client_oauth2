@@ -7,6 +7,6 @@ class UserData(models.Model):
     authorization_code = models.CharField(max_length=50)
     access_token = models.CharField(max_length=100)
     refresh_token = models.CharField(max_length=100)
-    expires_in = models.PositiveSmallIntegerField()
+    expires_in = models.DateTimeField()
     token_type = models.CharField(max_length=25)
     info = models.CharField(max_length=100)

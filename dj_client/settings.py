@@ -101,8 +101,11 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Settings for client app
-CLIENT_ID = 'testclient'
-CLIENT_SECRET = 'testpassword'
+CLIENT_ID = 'db0dcb2a1b2852865c9e'
+CLIENT_SECRET = 'ff1b8dbe09108d82bfb36628c913f931c08fe80f'
+AUTHORIZATION_URL = 'http://localhost:8080/server/oauth/authorize/'
+TOKEN_URL = 'http://localhost:8080/server/oauth/token/'
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
